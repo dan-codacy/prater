@@ -149,6 +149,7 @@
         {Credo.Check.Warning.UnusedRegexOperation},
         {Credo.Check.Warning.UnusedStringOperation},
         {Credo.Check.Warning.UnusedTupleOperation},
+        {Credo.Check.Warning.UnsafeExec, []},
         {Credo.Check.Warning.RaiseInsideRescue},
 
         #
