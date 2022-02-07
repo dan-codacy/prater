@@ -41,7 +41,7 @@
       #
       # To modify the timeout for parsing files, change this value:
       #
-      parse_timeout: 5000,
+      #parse_timeout: 5000,
       #
       # If you want to use uncolored output by default, you can change `color`
       # to `false` below:
