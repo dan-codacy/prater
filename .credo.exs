@@ -150,6 +150,7 @@
         {Credo.Check.Warning.UnusedStringOperation},
         {Credo.Check.Warning.UnusedTupleOperation},
         {Credo.Check.Warning.UnsafeExec, []},
+        {Credo.Check.Warning.MissingHeaderNotice, []},
         {Credo.Check.Warning.RaiseInsideRescue},
 
         #
