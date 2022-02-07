@@ -21,17 +21,7 @@
         # You can give explicit globs or simply directories.
         # In the latter case `**/*.{ex,exs}` will be used.
         #
-        included: [
-          "mix.exs",
-          "lib/",
-          "src/",
-          "test/",
-          "web/",
-          "apps/*/lib/",
-          "apps/*/src/",
-          "apps/*/test/",
-          "apps/*/web/"
-        ],
+        included: ["lib/", "src/", "test/", "web/", "apps/"],
         excluded: [~r"/_build/", ~r"/deps/", ~r"/node_modules/"]
       },
       #
@@ -75,22 +65,21 @@
         {Credo.Check.Consistency.SpaceAroundOperators, []},
         {Credo.Check.Consistency.SpaceInParentheses, []},
         {Credo.Check.Consistency.TabsOrSpaces, []},
-​
+
         #
         ## Design Checks
         #
         # You can customize the priority of any check
         # Priority values are: `low, normal, high, higher`
         #
-        {Credo.Check.Design.AliasUsage,
-         [priority: :low, if_nested_deeper_than: 2, if_called_more_often_than: 0]},
+        {Credo.Check.Design.AliasUsage,[priority: :low, if_nested_deeper_than: 2, if_called_more_often_than: 0]},
         # You can also customize the exit_status of each check.
         # If you don't want TODO comments to cause `mix credo` to fail, just
         # set this value to 0 (zero).
         #
         {Credo.Check.Design.TagTODO, [exit_status: 2]},
         {Credo.Check.Design.TagFIXME, []},
-​
+
         #
         ## Readability Checks
         #
@@ -113,7 +102,7 @@
         {Credo.Check.Readability.TrailingWhiteSpace, []},
         {Credo.Check.Readability.UnnecessaryAliasExpansion, []},
         {Credo.Check.Readability.VariableNames, []},
-​
+
         #
         ## Refactoring Opportunities
         #
@@ -128,7 +117,7 @@
         {Credo.Check.Refactor.Nesting, []},
         {Credo.Check.Refactor.UnlessWithElse, []},
         {Credo.Check.Refactor.WithClauses, []},
-​
+
         #
         ## Warnings
         #
@@ -152,10 +141,10 @@
         {Credo.Check.Warning.UnusedTupleOperation, []},
         {Credo.Check.Warning.UnsafeExec, []},
         #{Credo.Check.Warning.MissingHeaderNotice, []},
-​
+
         #
         # Checks scheduled for next check update (opt-in for now, just replace `false` with `[]`)
-​
+
         #
         # Controversial and experimental checks (opt-in, just replace `false` with `[]`)
         #
@@ -181,7 +170,7 @@
         {Credo.Check.Warning.LeakyEnvironment, false},
         {Credo.Check.Warning.MapGetUnsafePass, false},
         {Credo.Check.Warning.UnsafeToAtom, false}
-​
+
         #
         # Custom checks can be created using `mix credo.gen.check`.
         #
